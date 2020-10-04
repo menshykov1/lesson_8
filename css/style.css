@@ -1,0 +1,237 @@
+@font-face {
+	font-family: "Futura PT Book";
+	src: url("../fonts/FuturaPT-Book.woff2") format("woff2"), url("../fonts/FuturaPT-Book.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("..fonts/Gilroy-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Обнуляющий стиль */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+ol li,
+ul li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+	font-size: 14px;
+	line-height: 1;
+}
+/* -------------- */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+.header {
+	margin-bottom: 135px;
+}
+.inner {
+	max-width: 1130px;
+	margin: 0 auto;
+	padding: 0px 10px 0px 10px;
+}
+.header__body {
+	padding: 30px 0px 0px 0px;
+}
+.header__logo {
+	display: inline-block;
+	margin: 0px 130px 0px 0px;
+}
+.logo {
+	display: inline-block;
+	width: 140px;
+	height: 50px;
+	font-family: "Futura PT Book";
+	font-size: 16px;
+	line-height: 21px;
+	color: #00293f;
+}
+.logo img {
+	max-width: 100%;
+}
+.header__menu {
+	display: inline-block;
+	margin: 0px 0px 20px 0px;
+}
+
+.header__list li {
+	display: inline-block;
+	margin-right: 40px;
+}
+.header__list li:last-child {
+	margin-right: 0;
+}
+.header__link {
+	display: inline-block;
+	line-height: 21px;
+	font-family: "Futura PT Book";
+}
+.header__link:active {
+	color: inherit;
+}
+.header__link:hover {
+	border-bottom: 2px solid #08fc08;
+	color: #08fc08;
+}
+.header__input {
+	display: inline-block;
+}
+.header__input-link {
+	display: inline-block;
+	width: 160px;
+	background-color: #70c851;
+	margin: 0px 0px 0px 114px;
+	font-family: "Gilroy";
+	font-size: 16px;
+	line-height: 44px;
+	color: #fff;
+	padding: 0px 0 0px 30px;
+}
+
+.header__input-link:hover {
+	color: #000;
+	background-color: #199133;
+}
+.header__input-link span::after {
+	content: "";
+	display: inline-block;
+	background: url("../img/Arrow.png") 0 0 no-repeat;
+	width: 13px;
+	height: 12px;
+	margin: 0px 0px 0px 16px;
+}
+.header__input-link span:hover::after {
+	margin: 0px 0px 0px 26px;
+}
+.header__input-link span {
+	display: inline-block;
+}
+
+.main__item p:first-child {
+	display: block;
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 60px;
+	color: #182c51;
+}
+.main__item p:last-child {
+	display: block;
+	font-family: "Poppins", sans-serif;
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 60px;
+	color: #182c51;
+}
+.main__item {
+	margin-bottom: 53px;
+}
+.main__link {
+	display: inline-block;
+	background: #70c851;
+	border-radius: 3px;
+	font-family: "Poppins", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	color: #ffffff;
+	padding: 13px 43px 13px 44px;
+}
+.main__link:hover {
+	box-shadow: 0 5px 0 #03a9f4;
+	color: #000;
+}
+.main__link:active {
+	background-color: darkgreen;
+	box-shadow: 0 1px 0 #03a9f4;
+	margin-top: 5px;
+}
+
+.footer {
+	background-color: #f8f8f8;
+}
+.footer__body {
+	padding: 55px 0px 55px 0px;
+}
+.footer__text {
+	display: inline-block;
+	margin: 0px 120px 0px 0px;
+	max-width: 728px;
+}
+.footer__item {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 42px;
+	color: #00293f;
+	margin: 0px 0px 20px 0px;
+}
+.footer__text p {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+
+	color: #5a5a5a;
+}
+.footer__menu {
+	display: inline-block;
+}
+.footer__list li {
+	margin: 0px 0px 35px 0px;
+}
+.footer__link {
+	font-family: "Gilroy";
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	color: #182c51;
+}
+.footer__link::before {
+	content: "";
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	background: #70c851;
+	margin: 0px 9px 0px 0px;
+}
+.header__main {
+	background: url("../img/bg.png") right 0 no-repeat;
+	padding: 0 0 160px 0;
+}
